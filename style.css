@@ -1,0 +1,157 @@
+body{
+	color: tomato;
+	text-align: center;
+	font-size:1.2em;
+	font-family: 'Fredoka One', cursive;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-image: url("back-ground.jpg")
+}
+
+h1{
+	color:gold;
+	transition:all 1s ease 200ms;
+}
+h1:hover{
+	color:rgb(30, 17, 90);
+	background-color: gold;
+}
+h2[class=subtitle]{
+	color:rgb(33, 143, 170);
+	background-color:#8508043f;
+}
+#more{
+	color: steelblue;
+}
+li:nth-child(2){
+	color:#1ab2ff;
+	text-align: left;
+}
+li:first-child{
+	color:#0966f1;
+	text-align: left;
+}
+li:last-child{
+	color:#1069ee;
+	text-align: left;
+}
+a:link{
+	color:#00ffaa;
+	text-decoration: none;
+}
+a:visited{
+	color:lightgreen;
+}
+a:hover{
+	color:green;
+}
+textarea ~ button{
+	color:purple;
+}
+img + p{
+	color:rgb(102, 102, 102);
+	text-transform: capitalize;
+}
+tr > td{
+	color:rgb(250, 142, 100);
+	
+}
+img[src="pic.jpg"]{
+	float: right;
+	border: 10px solid rgb(0, 29, 82, .5);
+}
+div.back{
+	height: 300px;
+	background:radial-gradient(circle,red, orange, yellow, green, blue, indigo, violet);
+	border: 5px double steelblue;
+	padding: 20px;
+	margin: 40px 20px;
+	float:center;
+}
+.para-text{
+	color: azure;
+	text-align: center;
+	font-size:1.2em;
+	font-family: 'Nerko One', cursive;
+}
+.italic{
+	font-style: italic;
+}
+.site-table{
+	display: none
+}
+.container{
+	background-color: whitesmoke;
+	height: 200px;
+	margin:10px;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+	align-content: center;
+}
+.container-item{
+	background-color: #1ab2ff;
+	color:white;
+	font-size: 25px;
+	text-align: center;
+	width: 80px;
+	line-height:50px;
+	margin: 10px;
+}
+
+.grid-container{
+	background-color: rgba(255, 255, 255);
+	height: 300px;
+	margin:10px;
+	display:grid;
+	grid-template-columns: auto auto auto ;
+	grid-template-rows: auto auto;
+	grid-gap: 50px 50px;
+	justify-content: space-around;
+	align-content: space-evenly;
+}
+.grid-item{
+	color:white;
+	margin: 10px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 25px;
+	width:80px;
+}
+.submit-button{
+	margin: 20px 10px;
+	padding:10px 15px;
+	border:none;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: 'Fredoka One', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	color:white;
+	background-color:rgb(20, 137, 233);
+	transition: all 700ms ease-in-out 0.25s;
+
+}
+.submit-button:hover{
+	background-color:tomato;
+	padding:25px;
+	border-radius: 10px;
+	transform:translate(0px, 20px);
+	transform:scale(1.5);
+}
+.para-text{
+	transition: all 700ms ease 0.25s;
+}
+.para-text:hover{
+	background-color: rgba(255, 255, 255);
+	color:rgb(58, 58, 58);
+}
+.form-input{
+	border:2px solid rgb(20, 137, 233);
+	transition: all 400ms ease .6s
+}
+.form-input:hover{
+	width:250px;
+	border:2px solid tomato;
+
+}
