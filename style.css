@@ -17,8 +17,8 @@ h1:hover{
 	background-color: gold;
 }
 h2[class=subtitle]{
-	color:rgb(33, 143, 170);
-	background-color:#8508043f;
+	color:gold;
+	background-color:rgba(255, 217, 0, 0);
 }
 #more{
 	color: steelblue;
@@ -59,6 +59,11 @@ tr > td{
 img[src="pic.jpg"]{
 	float: right;
 	border: 10px solid rgb(0, 29, 82, .5);
+	border-radius: 5px;
+}
+img:hover{
+	border: 10px solid rgba(82, 0, 0, 0.685);
+	border-radius: 5px;
 }
 div.back{
 	height: 300px;
@@ -154,4 +159,30 @@ div.back{
 	width:250px;
 	border:2px solid tomato;
 
+}
+
+#lion{
+	animation-name:back-color;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+@keyframes back-color{
+
+	0%{background-color: rgba(255, 217, 0, 0.021); color:gold;}
+
+	10%{background-color:rgba(255, 217, 0, 0.466); color:rgba(30, 17, 90, 0);}
+
+	15%{background-color:rgba(255, 217, 0, 0.733); color:rgba(30, 17, 90, 0.425);}
+
+	20%{background-color:gold; color:rgb(30, 17, 90);}
+
+	40%{background-color:gold; color:rgb(30, 17, 90);}
+
+	60%{background-color:rgba(255, 217, 0, 0.733); color:rgba(30, 17, 90, 0.425);}
+
+	70%{background-color:rgba(255, 217, 0, 0.466); color:rgba(30, 17, 90, 0);}
+	
+	100%{background-color: rgba(255, 217, 0, 0.021); color:gold;}
 }
